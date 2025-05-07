@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base calculator button style -->
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/square_button</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Dark gray buttons (numbers) -->
+    <style name="CalculatorButton.Dark">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#333333</item>
+    </style>
+
+    <!-- Zero button style (double width) -->
+    <style name="CalculatorButton.Dark.Zero">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:background">@drawable/zero_button</item>
+    </style>
+
+    <!-- Light gray buttons (AC, +/-, %) -->
+    <style name="CalculatorButton.Gray">
+        <item name="android:textColor">#000000</item>
+        <item name="android:backgroundTint">#A5A5A5</item>
+    </style>
+
+    <!-- Orange buttons -->
+    <style name="CalculatorButton.Orange">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#FF9F0A</item>
+    </style>
+</resources>

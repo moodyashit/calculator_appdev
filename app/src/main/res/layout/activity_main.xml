@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Row 1 -->
+        <TextView
+            android:id="@+id/btnClear"
+            style="@style/CalculatorButton.Gray"
+            android:text="AC"
+            android:onClick="clearClick" />
+
+        <TextView
+            android:id="@+id/btnSign"
+            style="@style/CalculatorButton.Gray"
+            android:text="+/-"
+            android:onClick="changeSignClick" />
+
+        <TextView
+            android:id="@+id/btnPercent"
+            style="@style/CalculatorButton.Gray"
+            android:text="%"
+            android:onClick="percentClick" />
+
+        <TextView
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton.Orange"
+            android:text="÷"
+            android:onClick="operationClick" />
+
+        <!-- Row 2 -->
+        <TextView
+            android:id="@+id/btn7"
+            style="@style/CalculatorButton.Dark"
+            android:text="7"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn8"
+            style="@style/CalculatorButton.Dark"
+            android:text="8"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn9"
+            style="@style/CalculatorButton.Dark"
+            android:text="9"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton.Orange"
+            android:text="×"
+            android:onClick="operationClick" />
+
+        <!-- Row 3 -->
+        <TextView
+            android:id="@+id/btn4"
+            style="@style/CalculatorButton.Dark"
+            android:text="4"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn5"
+            style="@style/CalculatorButton.Dark"
+            android:text="5"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn6"
+            style="@style/CalculatorButton.Dark"
+            android:text="6"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btnMinus"
+            style="@style/CalculatorButton.Orange"
+            android:text="-"
+            android:onClick="operationClick" />
+
+        <!-- Row 4 -->
+        <TextView
+            android:id="@+id/btn1"
+            style="@style/CalculatorButton.Dark"
+            android:text="1"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn2"
+            style="@style/CalculatorButton.Dark"
+            android:text="2"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btn3"
+            style="@style/CalculatorButton.Dark"
+            android:text="3"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btnPlus"
+            style="@style/CalculatorButton.Orange"
+            android:text="+"
+            android:onClick="operationClick" />
+
+        <!-- Row 5 -->
+        <TextView
+            android:id="@+id/btn0"
+            style="@style/CalculatorButton.Dark.Zero"
+            android:text="0"
+            android:layout_columnSpan="2"
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btnDot"
+            style="@style/CalculatorButton.Dark"
+            android:text="."
+            android:onClick="numberClick" />
+
+        <TextView
+            android:id="@+id/btnEquals"
+            style="@style/CalculatorButton.Orange"
+            android:text="="
+            android:onClick="equalClick" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
